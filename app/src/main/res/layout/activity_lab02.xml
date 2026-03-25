@@ -1,0 +1,47 @@
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/favorites_grid"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:useDefaultMargins="true"
+    android:columnCount="3">
+
+    <Button
+        android:id="@+id/main_4_4_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:text="4 x 4"
+        android:tag="4 4"
+        android:onClick="onPickSize"
+        app:icon="@drawable/baseline_rocket_launch_24"
+        app:iconGravity="textTop" />
+
+    <Button
+        android:id="@+id/main_4_5_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:text="4 x 5"
+        android:tag="4 5"
+        android:onClick="onPickSize"
+        app:icon="@drawable/baseline_rocket_launch_24"
+        app:iconGravity="textTop" />
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/main_6_6_board"
+        android:layout_rowWeight="1"
+        android:layout_columnWeight="1"
+        android:width="0dp"
+        android:text="6 x 6"
+        android:tag="6 6"
+        android:onClick="onPickSize"
+        app:icon="@drawable/baseline_rocket_launch_24"
+        app:iconGravity="textTop" />
+
+</GridLayout>
